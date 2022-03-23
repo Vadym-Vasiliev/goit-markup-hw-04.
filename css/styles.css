@@ -242,12 +242,30 @@ a {
 /* interests */
 
 .interests {
+  padding-bottom: 94px;
   background-color: var(--bgc-main);
 }
+
+.interests .list-interests{
+  display: flex;
+}
+
+.list-interests .item-interests:not(:last-child){
+  margin-right: 30px;
+}
+
+.list-interests .img-interests{
+  display: block;
+}
+
+
+
+
 
 /* same title */
 .interests .title-interests,
 .team .title-team {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
