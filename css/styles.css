@@ -82,7 +82,7 @@ a {
 
 /* header */
 .header {
-  background-color: var(--bgc-team);
+  background-color: var(--bgc-main);
 }
 
 .header .header-flexbox {
@@ -201,6 +201,9 @@ a {
 
 /* specifics */
 .specifics {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--bgc-main);
 }
 
@@ -208,7 +211,20 @@ a {
   display: none;
 }
 
+.specifics .list-specifics{
+  display: flex;
+}
+
+.list-specifics .item-specifics{
+  width: 270px;
+}
+
+.list-specifics .item-specifics:not(:last-child){
+  margin-right: 30px;
+}
+
 .list-specifics .title-specifics {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
