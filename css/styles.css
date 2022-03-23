@@ -325,10 +325,16 @@ border-radius: 0px 0px 4px 4px;
 
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--bgc-hero-footer);
 }
 
+
 .footer .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -339,6 +345,10 @@ border-radius: 0px 0px 4px 4px;
 
 .logo-footer .studio-logo {
   color: var(--text-logo-footer);
+}
+
+.list-address .item-address:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .list-address .link-address {
