@@ -5,6 +5,7 @@
 /* фон кнопок портфолио #F5F4FA */
 /* фон карточек портфолио #eeeeee */
 /* фон иконок особенности #F5F4FA */
+/* фон иконок футера  rgba(255, 255, 255, 0.1) */
 
 /* основной цвет текста #757575 */
 /* вторичный цвет текста #212121 */
@@ -29,6 +30,7 @@
   --bgc-btn-portfolio: #f5f4fa;
   --bgc-card-portfolio: #eeeeee;
   --bgc-icon-specifics: #f5f4fa;
+  --bgc-icon-footer: rgba(255, 255, 255, 0.1);
 
   --text-main: #757575;
   --text-second: #212121;
@@ -457,6 +459,10 @@ a {
   background-color: var(--bgc-hero-footer);
 }
 
+.footer .all-footer {
+  display: flex;
+}
+
 .footer .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -491,6 +497,46 @@ a {
 }
 .list-address .map-address {
   color: var(--text-footer);
+}
+
+/* icon footer */
+.soclist-footer {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.soclist-footer .text-soclist {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--text-footer);
+}
+
+.soclist-footer .list-footer {
+  display: flex;
+}
+
+.list-footer .item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list-footer .link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--bgc-icon-footer);
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  background-color: var(--accent);
 }
 
 /* PORTFOLIO */
