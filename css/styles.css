@@ -165,6 +165,17 @@ a {
   margin-right: 50px;
 }
 
+/* icon auth */
+.auth-header .link-auth {
+  display: flex;
+  align-items: center;
+}
+
+.link-auth .svg-auth {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* hero */
 .hero {
   width: 1600px;
