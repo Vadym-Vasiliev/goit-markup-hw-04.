@@ -131,6 +131,10 @@ a {
   color: var(--accent);
 }
 
+.list-nav .link-nav.current {
+  color: var(--accent);
+}
+
 .nav-header .list-nav {
   margin-left: 93px;
   display: flex;
