@@ -3,6 +3,7 @@
 /* фон команды #F5F4FA */
 /* фон карточек команды #ffffff */
 /* фон кнопок портфолио #F5F4FA */
+/* фон карточек портфолио #eeeeee */
 
 /* основной цвет текста #757575 */
 /* вторичный цвет текста #212121 */
@@ -23,6 +24,7 @@
   --bgc-team: #f5f4fa;
   --bgc-team-portret: #ffffff;
   --bgc-btn-portfolio: #f5f4fa;
+  --bgc-card-portfolio: #eeeeee;
 
   --text-main: #757575;
   --text-second: #212121;
@@ -83,12 +85,12 @@ a {
   margin-right: auto;
   margin-left: auto;
 
-  outline: 1px solid skyblue;
+  /* outline: 1px solid skyblue; */
 }
 
 /* header */
 .header {
-  border: 1px solid var(--border-header);
+  border-bottom: 1px solid var(--border-header);
   background-color: var(--bgc-main);
 }
 
@@ -162,9 +164,6 @@ a {
 .auth-header .item-auth:not(:last-child) {
   margin-right: 50px;
 }
-
-/* auth-icon */
-.
 
 /* hero */
 .hero {
@@ -308,7 +307,11 @@ a {
 
 .list-team .img-portret {
   display: block;
-  margin-bottom: 30px;
+}
+
+.list-team .content-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .list-team .title-portret {
@@ -423,6 +426,9 @@ a {
 
 .list-projects .item-projects {
   margin-right: 30px;
+  width: 370px;
+  height: 404px;
+  border: 1px solid var(--bgc-card-portfolio);
 }
 
 .list-projects .item-projects:nth-child(3n) {
@@ -433,8 +439,16 @@ a {
   margin-bottom: 30px;
 }
 
+.list-projects .link-projects {
+  display: block;
+}
+
 .link-projects .img-projects {
   display: block;
+}
+
+.link-projects .content-projects {
+  padding: 20px 24px;
 }
 
 .link-projects .title-projects {
