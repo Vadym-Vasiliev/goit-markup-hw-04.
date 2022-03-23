@@ -15,6 +15,8 @@
 /* футер цвет текста #FFFFFF */
 /* футер цвет ссылок rgba(255, 255, 255, 0.6) */
 /* тень кнопки героя rgba(0, 0, 0, 0.15) */
+/* цвет иконок команды #AFB1B8 */
+/* ховер иконок команды #ffffff */
 
 /* цвет акцента #2196F3 */
 /* бордер шапки #ECECEC */
@@ -37,6 +39,8 @@
   --text-footer: #ffffff;
   --link-footer: rgba(255, 255, 255, 0.6);
   --shadow-btn-hero: rgba(0, 0, 0, 0.15);
+  --icon-color-team: #afb1b8;
+  --hover-icon-team: #ffffff;
 
   --accent: #2196f3;
   --border-header: #ececec;
@@ -319,7 +323,7 @@ a {
 }
 
 .list-team .item-team {
-  height: 368px;
+  height: 428px;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -338,7 +342,7 @@ a {
 
 .list-team .content-team {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .list-team .title-portret {
@@ -354,6 +358,41 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+}
+
+/* icon team */
+.list-team .list-soclist {
+  display: flex;
+  justify-content: center;
+}
+
+.list-soclist .item-soclist:not(:last-child) {
+  margin-right: 10px;
+}
+
+.list-soclist .link-team {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  color: var(--icon-color-team);
+}
+
+.link-team .svg-team {
+  fill: currentColor;
+}
+
+.link-team:hover .svg-team,
+.link-team:focus .svg-team {
+  color: var(--hover-icon-team);
+}
+
+.link-team:hover,
+.link-team:focus {
+  background-color: var(--accent);
 }
 
 /* footer */
