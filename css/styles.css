@@ -15,7 +15,7 @@
 /* футер цвет текста #FFFFFF */
 /* футер цвет ссылок rgba(255, 255, 255, 0.6) */
 /* тень кнопки героя rgba(0, 0, 0, 0.15) */
-/* цвет иконок команды #AFB1B8 */
+/* цвет иконок команды та клиентов #AFB1B8 */
 /* ховер иконок команды #ffffff */
 
 /* цвет акцента #2196F3 */
@@ -39,7 +39,7 @@
   --text-footer: #ffffff;
   --link-footer: rgba(255, 255, 255, 0.6);
   --shadow-btn-hero: rgba(0, 0, 0, 0.15);
-  --icon-color-team: #afb1b8;
+  --icon-color-team-clients: #afb1b8;
   --hover-icon-team: #ffffff;
 
   --accent: #2196f3;
@@ -393,6 +393,60 @@ a {
 .link-team:hover,
 .link-team:focus {
   background-color: var(--accent);
+}
+
+/* clients */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--bgc-main);
+}
+
+.clients .title-clients {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: var(--text-second);
+}
+
+.clients .list-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.list-clients .item-clients {
+  width: 170px;
+  height: 92px;
+}
+
+.list-clients .item-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-clients .link-clients {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-color-team-clients);
+  border-radius: 4px;
+
+  color: var(--icon-color-team-clients);
+}
+
+.link-clients .svg-clients {
+  fill: currentColor;
+}
+
+.link-clients:hover,
+.link-clients:focus {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* footer */
