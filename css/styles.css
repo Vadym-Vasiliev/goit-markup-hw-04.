@@ -4,6 +4,7 @@
 /* фон карточек команды #ffffff */
 /* фон кнопок портфолио #F5F4FA */
 /* фон карточек портфолио #eeeeee */
+/* фон иконок особенности #F5F4FA */
 
 /* основной цвет текста #757575 */
 /* вторичный цвет текста #212121 */
@@ -25,6 +26,7 @@
   --bgc-team-portret: #ffffff;
   --bgc-btn-portfolio: #f5f4fa;
   --bgc-card-portfolio: #eeeeee;
+  --bgc-icon-specifics: #f5f4fa;
 
   --text-main: #757575;
   --text-second: #212121;
@@ -258,6 +260,18 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* icon specifics */
+.list-specifics .svg-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--bgc-icon-specifics);
 }
 
 /* interests */
