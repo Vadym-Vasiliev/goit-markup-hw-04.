@@ -85,6 +85,12 @@ a {
   background-color: var(--bgc-team);
 }
 
+.header .header-flexbox {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
 .logo-header {
   font-family: 'Raleway';
   font-weight: 700;
@@ -116,6 +122,15 @@ a {
   color: var(--accent);
 }
 
+.nav-header .list-nav {
+  margin-left: 93px;
+  display: flex;
+}
+
+.list-nav .item-nav:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* auth */
 .auth-header .link-auth {
   color: var(--text-main);
@@ -124,6 +139,15 @@ a {
 .auth-header .link-auth:hover,
 .auth-header .link-auth:focus {
   color: var(--accent);
+}
+
+.header-flexbox .auth-header {
+  margin-left: auto;
+  display: flex;
+}
+
+.auth-header .item-auth:not(:last-child) {
+  margin-right: 50px;]
 }
 
 /* hero */
