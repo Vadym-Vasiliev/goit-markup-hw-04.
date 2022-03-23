@@ -89,6 +89,7 @@ a {
   height: 80px;
   display: flex;
   align-items: center;
+  
 }
 
 .logo-header {
@@ -109,10 +110,13 @@ a {
 /*  same class */
 .list-nav .link-nav,
 .auth-header .link-auth {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
 
   color: var(--text-second);
 }
@@ -125,6 +129,7 @@ a {
 .nav-header .list-nav {
   margin-left: 93px;
   display: flex;
+  
 }
 
 .list-nav .item-nav:not(:last-child) {
