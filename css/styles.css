@@ -2,6 +2,7 @@
 /* фон героя и футера #2F303A */
 /* фон команды #F5F4FA */
 /* фон карточек команды #ffffff */
+/* фон кнопок портфолио #F5F4FA */
 
 /* основной цвет текста #757575 */
 /* вторичный цвет текста #212121 */
@@ -21,6 +22,7 @@
   --bgc-hero-footer: #2f303a;
   --bgc-team: #f5f4fa;
   --bgc-team-portret: #ffffff;
+  --bgc-btn-portfolio: #F5F4FA;
 
   --text-main: #757575;
   --text-second: #212121;
@@ -366,4 +368,47 @@ border-radius: 0px 0px 4px 4px;
 }
 .list-address .map-address {
   color: var(--text-footer);
+}
+
+
+/* PORTFOLIO */
+
+/* projects */
+.projects{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.projects .hidden-projects{
+  display: none;
+}
+
+.projects .list-filters{
+  display: flex;
+  justify-content: center;
+}
+
+.list-filters .item-filters:not(:last-child){
+  margin-right: 8px;
+}
+
+.list-filters .btn-filters{
+  border-color: transparent;
+  cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+
+color: var(--text-second);
+background-color: var(--bgc-btn-portfolio);
+}
+
+.list-filters .btn-filters:hover,
+.list-filters .btn-filters:focus{
+  color: var(--text-btn);
+  background-color: var(--accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
