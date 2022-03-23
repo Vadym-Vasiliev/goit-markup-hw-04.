@@ -100,9 +100,19 @@ a {
   color: var(--text-second);
 }
 
+.list-nav .link-nav:hover,
+.list-nav .link-nav:focus {
+  color: var(--accent);
+}
+
 /* auth */
 .auth-header .link-auth {
   color: var(--text-main);
+}
+
+.auth-header .link-auth:hover,
+.auth-header .link-auth:focus {
+  color: var(--accent);
 }
 
 /* hero */
@@ -215,7 +225,7 @@ a {
   color: var(--text-logo-footer);
 }
 
-.list-address .auth-address {
+.list-address .link-address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -224,6 +234,10 @@ a {
   color: var(--link-footer);
 }
 
+.list-address .link-address:hover,
+.list-address .link-address:focus {
+  color: var(--accent);
+}
 .list-address .map-address {
   color: var(--text-footer);
 }
