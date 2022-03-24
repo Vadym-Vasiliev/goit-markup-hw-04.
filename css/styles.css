@@ -186,7 +186,6 @@ a {
 
 /* hero */
 .hero {
-  width: 1600px;
   height: 600px;
   text-align: center;
   margin-left: auto;
@@ -556,7 +555,7 @@ a {
 .projects .list-filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .list-filters .item-filters:not(:last-child) {
@@ -607,6 +606,12 @@ a {
 
 .list-projects .link-projects {
   display: block;
+}
+
+.list-projects .link-projects:hover,
+.list-projects .link-projects:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .link-projects .img-projects {
