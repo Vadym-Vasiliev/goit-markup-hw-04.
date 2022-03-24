@@ -592,7 +592,6 @@ a {
 .list-projects .item-projects {
   margin-right: 30px;
   width: 370px;
-  height: 404px;
   border: 1px solid var(--bgc-card-portfolio);
 }
 
@@ -616,6 +615,7 @@ a {
 
 .link-projects .img-projects {
   display: block;
+  width: 100%;
 }
 
 .link-projects .content-projects {
