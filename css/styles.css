@@ -379,7 +379,7 @@ a {
   align-items: center;
   border-radius: 50%;
 
-  color: var(--icon-color-team);
+  color: var(--icon-color-team-clients);
 }
 
 .link-team .svg-team {
