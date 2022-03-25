@@ -55,7 +55,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -155,9 +155,6 @@ a {
 }
 
 /* auth */
-.auth-header .link-auth {
-  color: var(--text-main);
-}
 
 .auth-header .link-auth:hover,
 .auth-header .link-auth:focus {
@@ -177,6 +174,8 @@ a {
 .auth-header .link-auth {
   display: flex;
   align-items: center;
+
+  color: var(--text-main);
 }
 
 .link-auth .svg-auth {
